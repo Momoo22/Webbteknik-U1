@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Data communication and URLs</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#question__1">Datakommunikation och webbadresser</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+    </div>
+
+    <div class="container">
+        <h1 id="heading1">Datakommunikation och webbadresser
+        </h1>
+        <ol>
+            <li>
+                <h3>Ge en kort beskrivning (syfte och vad de gör) av var och en av protokollen <strong> HTTP,
+            TCP and IP</strong>.
+                </h3>
+            </li>
+            <h4> <strong> HTTP</strong></h4>
+            <p>HTTP är ett Hypertext Transfer Protocol. <br>HTTP är ett protokoll som hämtar resurser som HTML-dokument. Det används för att utbyta data på webben och är ett klient-serverprotokoll vilket innebär att förfrågningar initieras av mottagaren,
+                vanligtvis webbläsaren. HTTP ger användarna ett sätt att interagera genom att distribuera hypertextmeddelanden mellan servrar och klienter. HTTP använder olika uppgifter som ska utföras av begäransmetoder som är anlitade enligt nedan:
+
+            </p>
+            <ul>
+                <li>GET = = Begär en specifik källa i sin helhet.</li>
+                <li>HEAD = En specifik resurs utan kroppsinnehåll.</li>
+                <li>POST = = Lägger till artiklar, meddelanden och information till en annan sida under en befintlig webbresurs.</li>
+                <li>PUT = = Modifierar direkt en aktuell webbkälla och skapar en ny URL om det behövs.</li>
+                <li>OPTIONS = = Visa användarens vilka HTTP-metoder som är tillgängliga för en viss URL</li>
+                <li>CONNECT = Omvandlar den begärda länken.
+                </li>
+            </ul>
+            <h4> <strong> TCP</strong></h4>
+            <p>TCP är ett anslutningsorienterat protokoll som anger att en anslutning upprättas och bibehålls tills applikationsdata i varje ände har avslutat utbytet. TCP delar upp programdata i paket. Detta paket levereras till transportlagret. Lager 4
+                hanterar flödeskontroll och tillhandahåller felfri dataöverföring och hanterar återsändning av tappade eller förvanskade paket och kvitterar alla paket som anländer. I OSI-modellen täcker TCP delar av lager 4 transportlagret och lager
+                5 täcker sessionslagret.
+            </p>
+            <p>TCP:s jobb är att se till att all data som skickas i en ström flyttas från klient till server i rätt ordning och är intakt. TCP använder en teknik som kallas positiv bekräftelse med återsändning, vilket kräver att den mottagande delen av en
+                sändning ger ett svar på vilken data som har tagits emot. Byten som skickas kan exakt matcha de mottagna byten. Inga data ändras eller går förlorade på vägen. Anslutning upprättas och ett 3-vägs handslag görs. Först skickar källan ett
+                SYN-begäranpaket till servern för att starta sessionsetableringsprocessen. Sedan skickar servern ett SYN-ACK-paket för att acceptera processen. Slutligen skickar källan ett ACK-paket till målet för att bekräfta processen, varefter data
+                kan skickas.
+            </p>
+            <h4> <strong>IP</strong></h4>
+            <p>Internetprotokollet (IP) är ett protokoll, eller en uppsättning regler, för att dirigera och adressera datapaket så att de kan resa över nätverk och komma fram till rätt destination. Data som passerar internetet delas upp i mindre bitar, så
+                kallade paket. IP-information bifogar varje paket, och denna information hjälper routrar att skicka paket till rätt plats. Varje enhet eller domän som ansluter till Internetet tilldelas en IP-adress, och när paket dirigeras till den IP-adress
+                som är kopplad till dem kommer data dit där det behövs.</p>
+            <img src="images/tcp.jpg" alt="tcp">
+            <li>
+                <h3>Beskriv vilka delar följande url består av:
+                    <br>
+                    <a href="
+            http://medieteknik.lnu.se/1me321/uppg/u1.html#fragor
+            ">
+            http://medieteknik.lnu.se/1me321/uppg/u1.html#fragor
+            </a>
+                </h3>
+            </li>
+        </ol>
+        <ul>
+            <li><strong>http://</strong> är ett protokoll.</li>
+            <li><strong>medieteknik</strong> är en underdomän
+            </li>
+            <li><strong>.lnu.sek</strong> är en domän
+            </li>
+            <li><strong>/1me321/uppg/u1.html</strong> är en sökväg</li>
+            <li><strong>#fragor</strong> är ett fragment
+            </li>
+        </ul>
+
+        <h1><a href="html.html">Gå till fråga 1</a></h1>
+        <h1><a href="css.html">Gå till fråga 2</a></h1>
+    </div>
+
+</body>
+
+</html>
